@@ -17,8 +17,26 @@
         <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
         </div>
+
+        <!-- Template used by app.js to render each activity card -->
+        <template id="activity-card-template">
+          <article class="activity-card">
+            <header>
+              <h4 class="activity-title"></h4>
+              <p class="activity-meta"></p>
+            </header>
+            <p class="activity-description"></p>
+
+            <!-- Participants section -->
+            <section class="participants">
+              <h5>Participants</h5>
+              <ul class="participants-list">
+                <!-- populated by JS; if empty a .no-participants li is shown -->
+              </ul>
+            </section>
+          </article>
+        </template>
       </section>
 
       <section id="signup-container">

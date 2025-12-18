@@ -57,21 +57,91 @@ section h3 {
   color: #1a237e;
 }
 
+/* Activity card */
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.04);
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Header/meta */
+.activity-card .activity-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+.activity-card .activity-meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #475569;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+/* Description */
+.activity-card .activity-description {
+  margin: 0.5rem 0;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+/* Participants section */
+.participants {
+  margin-top: 0.75rem;
+  border-top: 1px dashed #e6eef8;
+  padding-top: 0.6rem;
+}
+.participants h5 {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+  color: #0b1220;
+}
+
+/* Bulleted participants list */
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #0b1220;
+  font-size: 0.9rem;
+}
+.participants-list li {
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* remove button next to participants */
+.participant-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c53030;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 1rem;
+  line-height: 1;
+}
+.participant-remove:hover {
+  color: #9b2c2c;
+}
+
+/* small avatar dot for each participant */
+.participant-avatar {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2563eb;
+  flex: 0 0 10px;
+}
+
+/* placeholder when no participants yet */
+.no-participants {
+  color: #64748b;
+  font-style: italic;
 }
 
 .form-group {

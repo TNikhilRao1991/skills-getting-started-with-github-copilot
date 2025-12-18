@@ -101,7 +101,8 @@ section h3 {
 /* Bulleted participants list */
 .participants-list {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 0;
+  list-style: none;
   color: #0b1220;
   font-size: 0.9rem;
 }
@@ -110,6 +111,22 @@ section h3 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+/* remove button next to participants */
+.participant-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c53030;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 1rem;
+  line-height: 1;
+}
+.participant-remove:hover {
+  color: #9b2c2c;
 }
 
 /* small avatar dot for each participant */
